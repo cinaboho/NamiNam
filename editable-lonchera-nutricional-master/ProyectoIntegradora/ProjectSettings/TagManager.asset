@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Frutas
+  - chatarra
+  - nami
+  - alimentos
+  - manzana
+  - frutilla
+  - maduroasado
+  - mandarina
+  - guineo
+  - queso
+  - sanduche
+  - uva
+  - zanahoria
+  - huevodeoro
+  - tortillaverde
+  - namilonchera
+  - constructores
+  - energeticos
+  - reguladores
+  - aguacate
+  - leche
+  - brocoli
+  - pepino
+  - tomate
+  - colector
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - canvas
+  - frutas
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 3497956013
+    locked: 0
+  - name: Alimentos
+    uniqueID: 3204710475
+    locked: 0
+  - name: Canvas
+    uniqueID: 2644121051
+    locked: 0
