@@ -225,7 +225,7 @@
  <HintPath>/Applications/Unity/Hub/Editor/2017.4.34f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
  </Reference>
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>/Users/cindybohorquezsantana/Documents/LIBROS/Investigacion/CODIGO FUENTE/lonchera-nutricional-master/ProyectoIntegradora/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>/Users/cindybohorquezsantana/Proyects/NamiNam/editable-lonchera-nutricional-master/ProyectoIntegradora/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Hub/Editor/2017.4.34f1/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
