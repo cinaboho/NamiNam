@@ -11,8 +11,7 @@ public class ControladorJuego : MonoBehaviour {
     public new ControladorAudio audio;
     public Registro registro;
     public ControladorBandera bandera;
-
-
+    public LevelMetaData levelData;
     public void IrMenu(string nombre)
     {
         // SceneManager.LoadScene(nombre);
@@ -125,5 +124,22 @@ public class ControladorJuego : MonoBehaviour {
         yield return new WaitForSeconds(1f);
         // do something
         
+    }
+
+      public void EndLevel(string status)
+    {
+        if (status == "abandonado")
+        {
+            AudioManager.Instance.PlaySFX("TinyButtonPush");
+        }
+
+        levelData.estado = status;
+        levelData.fecha_fin = System.DateTime.Now.ToString("yyyy/MM/dd");
+        levelData.tiempo_juego = System.Math.Round(Time.timeSinceLevelLoad).ToString();
+        levelData.correctas = score.ToString();
+        levelData.incorrectas = errors.ToString();
+        GameStateManager.Instance.AddJsonToList(JsonUtility.ToJson(levelData));
+
+        GameStateManager.Instance.LoadScene("ActivityHub");
     }
 }
