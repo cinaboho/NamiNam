@@ -1,4 +1,4 @@
-﻿using DigitalRuby.SoundManagerNamespace;
+﻿//using DigitalRuby.SoundManagerNamespace;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,18 +12,13 @@ using UnityEngine.SceneManagement;
 public class GameStateManager : UnitySingleton<GameStateManager>
 {
     public bool netService;
-
     private const string SERVER_URL = "http://midiapi.espol.edu.ec";
     private const string API_URL = SERVER_URL + "/api/v1/entrance/AlmacenarDatosController";
-
     private List<string> jsonList = new List<string>();
     private bool IsConnectedToServer = false;
-
     public string creditsScreenCaller;
-
     private string settingsFileName = "/globalSettings.dat";
     private string gameDataFileName = "/gamesave.dat";
-
     private GlobalSettings globalSettings;
 
     // Use this for initialization
@@ -145,7 +140,7 @@ public class GameStateManager : UnitySingleton<GameStateManager>
             return true;
         }
         Debug.Log("Error. Check internet connection!");
-        return false;   
+        return false;
     }
 
     IEnumerator CheckServer()

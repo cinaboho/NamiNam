@@ -80,11 +80,15 @@
      <Compile Include="Assets\Scripts\ControladorTiempo.cs" />
      <Compile Include="Assets\Scripts\ControladorVidas.cs" />
      <Compile Include="Assets\Scripts\Controladorvideo.cs" />
+     <Compile Include="Assets\Scripts\GameMetaData.cs" />
+     <Compile Include="Assets\Scripts\GameStateManager.cs" />
      <Compile Include="Assets\Scripts\GeneradorAlimentos.cs" />
+     <Compile Include="Assets\Scripts\LevelMetaData.cs" />
      <Compile Include="Assets\Scripts\NamiControlador.cs" />
      <Compile Include="Assets\Scripts\Registro.cs" />
      <Compile Include="Assets\Scripts\saveData.cs" />
      <Compile Include="Assets\Scripts\TocarObjeto.cs" />
+     <Compile Include="Assets\Scripts\UnitySingleton.cs" />
      <Compile Include="Assets\Scripts\Vidaslonchera.cs" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>/Applications/Unity/Hub/Editor/2017.4.34f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
