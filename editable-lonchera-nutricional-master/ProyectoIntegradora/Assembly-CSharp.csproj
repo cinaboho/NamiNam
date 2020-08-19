@@ -91,6 +91,9 @@
      <Compile Include="Assets\Scripts\TocarObjeto.cs" />
      <Compile Include="Assets\Scripts\UnitySingleton.cs" />
      <Compile Include="Assets\Scripts\Vidaslonchera.cs" />
+     <Compile Include="Assets\SoundManager\Demo\SoundManagerDemo.cs" />
+     <Compile Include="Assets\SoundManager\SoundManager.cs" />
+     <None Include="Assets\SoundManager\Readme.txt" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>/Applications/Unity/Hub/Editor/2017.4.34f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
  </Reference>
