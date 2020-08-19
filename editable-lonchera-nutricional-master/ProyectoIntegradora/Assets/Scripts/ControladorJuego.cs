@@ -139,7 +139,6 @@ public class ControladorJuego : MonoBehaviour {
         levelData.correctas = score.ToString();
         levelData.incorrectas = errors.ToString();
         GameStateManager.Instance.AddJsonToList(JsonUtility.ToJson(levelData));
-
         GameStateManager.Instance.LoadScene("ActivityHub");
     }
 }
