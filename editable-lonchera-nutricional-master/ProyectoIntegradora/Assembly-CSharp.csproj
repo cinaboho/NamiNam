@@ -87,6 +87,7 @@
      <Compile Include="Assets\Scripts\NamiControlador.cs" />
      <Compile Include="Assets\Scripts\Registro.cs" />
      <Compile Include="Assets\Scripts\saveData.cs" />
+     <Compile Include="Assets\Scripts\SessionManager.cs" />
      <Compile Include="Assets\Scripts\TocarObjeto.cs" />
      <Compile Include="Assets\Scripts\UnitySingleton.cs" />
      <Compile Include="Assets\Scripts\Vidaslonchera.cs" />
