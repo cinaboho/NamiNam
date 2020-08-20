@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: "N\u0303amiFrames_0"
+  m_Name: "\xD1amiFrames_0"
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: salto

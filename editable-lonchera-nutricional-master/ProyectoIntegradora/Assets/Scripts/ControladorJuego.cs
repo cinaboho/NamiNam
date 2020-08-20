@@ -12,6 +12,7 @@ public class ControladorJuego : MonoBehaviour {
     public Registro registro;
     public ControladorBandera bandera;
     public LevelMetaData levelData;
+    private string activityName;
     public void IrMenu(string nombre)
     {
         // SceneManager.LoadScene(nombre);
@@ -90,7 +91,8 @@ public class ControladorJuego : MonoBehaviour {
         registro = FindObjectOfType<Registro>();
         alimentos = FindObjectOfType<ContadorAlimentos>();
         contP = FindObjectOfType<ContadorPuntaje>();
-        
+        activityName = GameStateManager.Instance.getCurrentSceneName();
+        levelData = new LevelMetaData(SessionManager.Instance.nombre_jugador, "Seres" + activityName);
 
         if (SceneManager.GetSceneByName("Juego").isLoaded)
         {

@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 95628073762683934}
   - component: {fileID: 58201806876865158}
   m_Layer: 0
-  m_Name: "N\u0303amiFrames_0"
+  m_Name: "\xD1amiFrames_0"
   m_TagString: nami
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
