@@ -127,16 +127,12 @@ public class ControladorJuego : MonoBehaviour {
 
       public void EndLevel(string status)
     {
-        if (status == "abandonado")
-        {
-            AudioManager.Instance.PlaySFX("TinyButtonPush");
-        }
 
         levelData.estado = status;
         levelData.fecha_fin = System.DateTime.Now.ToString("yyyy/MM/dd");
         levelData.tiempo_juego = System.Math.Round(Time.timeSinceLevelLoad).ToString();
-        levelData.correctas = score.ToString();
-        levelData.incorrectas = errors.ToString();
+        //levelData.correctas = score.ToString();
+        //levelData.incorrectas = errors.ToString();
         GameStateManager.Instance.AddJsonToList(JsonUtility.ToJson(levelData));
         //GameStateManager.Instance.LoadScene("ActivityHub");
     }
