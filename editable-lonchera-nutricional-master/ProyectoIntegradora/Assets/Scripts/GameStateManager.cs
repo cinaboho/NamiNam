@@ -99,12 +99,12 @@ public class GameStateManager : UnitySingleton<GameStateManager>
 
 
 
-    public void LoadScene(string sceneName)
-    {
-        AudioManager.Instance.StopMusic("BGM");
-        AudioManager.Instance.StopAllVoices();
-        SceneManager.LoadScene(sceneName);
-    }
+    //public void LoadScene(string sceneName)
+    //{
+    //    AudioManager.Instance.StopMusic("BGM");
+    //    AudioManager.Instance.StopAllVoices();
+    //    SceneManager.LoadScene(sceneName);
+    //}
 
 
 
@@ -118,10 +118,10 @@ public class GameStateManager : UnitySingleton<GameStateManager>
         return SceneManager.GetActiveScene().name;
     }
 
-    public void ReloadCurrentScene()
-    {
-        LoadScene(getCurrentSceneName());
-    }
+    //public void ReloadCurrentScene()
+    //{
+      //  LoadScene(getCurrentSceneName());
+    //}
 
 
     public void PrintJsonList()

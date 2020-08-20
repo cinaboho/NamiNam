@@ -81,7 +81,7 @@ public class ControladorJuego : MonoBehaviour {
         //transicion.SetTrigger("end");
         yield return new WaitForSeconds(0.2f);
           //  SceneManager.LoadScene("Niveles");
-        SceneManager.LoadScene("Menuinicio");
+        //SceneManager.LoadScene("Menuinicio");
     }
 
     // Use this for initialization
@@ -123,7 +123,6 @@ public class ControladorJuego : MonoBehaviour {
     {
         yield return new WaitForSeconds(1f);
         // do something
-        
     }
 
       public void EndLevel(string status)
@@ -139,6 +138,6 @@ public class ControladorJuego : MonoBehaviour {
         levelData.correctas = score.ToString();
         levelData.incorrectas = errors.ToString();
         GameStateManager.Instance.AddJsonToList(JsonUtility.ToJson(levelData));
-        GameStateManager.Instance.LoadScene("ActivityHub");
+        //GameStateManager.Instance.LoadScene("ActivityHub");
     }
 }
