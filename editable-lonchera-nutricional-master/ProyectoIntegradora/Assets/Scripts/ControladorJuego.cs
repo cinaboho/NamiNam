@@ -97,14 +97,17 @@ public class ControladorJuego : MonoBehaviour {
         if (SceneManager.GetSceneByName("Juego").isLoaded)
         {
             bandera.tempNombre = "Juego";
+            EndLevel("completado");
         }
         else if (SceneManager.GetSceneByName("Juego2").isLoaded)
         {
             bandera.tempNombre = "Juego2";
+            EndLevel("completado");
         }
         else if (SceneManager.GetSceneByName("Juego3").isLoaded)
         {
             bandera.tempNombre = "Juego3";
+            EndLevel("completado");
         }
         //  savedata.SaveData();
         //  if (contP.bandera == false)
