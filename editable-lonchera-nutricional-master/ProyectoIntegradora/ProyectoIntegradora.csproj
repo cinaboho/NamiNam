@@ -194,9 +194,6 @@
     <Reference Include="UnityEngine.WindModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.34f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
     </Reference>
-    <Reference Include="Facebook.Unity.Settings">
-      <HintPath>Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.34f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -235,51 +232,61 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Audiolonchera.cs" />
+    <Compile Include="Assets\Scripts\Activities\ContadorPuntaje.cs" />
+    <Compile Include="Assets\Scripts\Activities\ControladorAudio.cs" />
+    <Compile Include="Assets\Scripts\Activities\ControladorBandera.cs" />
+    <Compile Include="Assets\Scripts\Activities\Controladorcreditos.cs" />
+    <Compile Include="Assets\Scripts\Activities\ControladorFelicidades.cs" />
+    <Compile Include="Assets\Scripts\Activities\controladorfeliz.cs" />
+    <Compile Include="Assets\Scripts\Activities\ControladorGameOver.cs" />
+    <Compile Include="Assets\Scripts\Activities\Controladorgracias.cs" />
+    <Compile Include="Assets\Scripts\Activities\ControladorJuego.cs" />
+    <Compile Include="Assets\Scripts\Activities\Controladorlonchera.cs" />
+    <Compile Include="Assets\Scripts\Activities\Controladormenu.cs" />
+    <Compile Include="Assets\Scripts\Activities\Controladorniveles.cs" />
+    <Compile Include="Assets\Scripts\Activities\Controladorproximamente.cs" />
+    <Compile Include="Assets\Scripts\Activities\ControladorPuntaje.cs" />
+    <Compile Include="Assets\Scripts\Activities\ControladorSonido.cs" />
+    <Compile Include="Assets\Scripts\Activities\ControladorTiempo.cs" />
+    <Compile Include="Assets\Scripts\Activities\ControladorVidas.cs" />
+    <Compile Include="Assets\Scripts\Activities\NamiControlador.cs" />
+    <Compile Include="Assets\Scripts\AvatarSelection\AvatarButton.cs" />
+    <Compile Include="Assets\Scripts\AvatarSelection\AvatarButtonSpawner.cs" />
+    <Compile Include="Assets\Scripts\AvatarSelection\AvatarSelectController.cs" />
+    <Compile Include="Assets\Scripts\BaseClass\GeneradorAlimentos.cs" />
+    <Compile Include="Assets\Scripts\BaseClass\UnitySingleton.cs" />
+    <Compile Include="Assets\Scripts\BaseClass\UnitySingletonPersistent.cs" />
+    <Compile Include="Assets\Scripts\ButtonClickNavigator.cs" />
     <Compile Include="Assets\Scripts\CargaConsejo.cs" />
     <Compile Include="Assets\Scripts\CargaConsejo1.cs" />
-    <Compile Include="Assets\Scripts\CargaInicio.cs" />
+    <Compile Include="Assets\Scripts\CloudController.cs" />
     <Compile Include="Assets\Scripts\Colector.cs" />
     <Compile Include="Assets\Scripts\Consejo1.cs" />
     <Compile Include="Assets\Scripts\Consejo2.cs" />
     <Compile Include="Assets\Scripts\Consejo3.cs" />
     <Compile Include="Assets\Scripts\Consejo4.cs" />
     <Compile Include="Assets\Scripts\Consejolonchera.cs" />
-    <Compile Include="Assets\Scripts\ContadorAlimentos.cs" />
-    <Compile Include="Assets\Scripts\ContadorPuntaje.cs" />
-    <Compile Include="Assets\Scripts\ControladorAudio.cs" />
-    <Compile Include="Assets\Scripts\ControladorBandera.cs" />
-    <Compile Include="Assets\Scripts\Controladorcreditos.cs" />
-    <Compile Include="Assets\Scripts\ControladorFelicidades.cs" />
-    <Compile Include="Assets\Scripts\controladorfeliz.cs" />
-    <Compile Include="Assets\Scripts\ControladorGameOver.cs" />
-    <Compile Include="Assets\Scripts\Controladorgracias.cs" />
-    <Compile Include="Assets\Scripts\ControladorJuego.cs" />
-    <Compile Include="Assets\Scripts\Controladorlonchera.cs" />
-    <Compile Include="Assets\Scripts\Controladormenu.cs" />
-    <Compile Include="Assets\Scripts\Controladorniveles.cs" />
-    <Compile Include="Assets\Scripts\Controladorproximamente.cs" />
-    <Compile Include="Assets\Scripts\ControladorPuntaje.cs" />
-    <Compile Include="Assets\Scripts\ControladorSonido.cs" />
-    <Compile Include="Assets\Scripts\ControladorTiempo.cs" />
-    <Compile Include="Assets\Scripts\ControladorVidas.cs" />
-    <Compile Include="Assets\Scripts\Controladorvideo.cs" />
-    <Compile Include="Assets\Scripts\GameMetaData.cs" />
-    <Compile Include="Assets\Scripts\GameStateManager.cs" />
-    <Compile Include="Assets\Scripts\GeneradorAlimentos.cs" />
-    <Compile Include="Assets\Scripts\LevelMetaData.cs" />
-    <Compile Include="Assets\Scripts\NamiControlador.cs" />
+    <Compile Include="Assets\Scripts\CreditsController.cs" />
+    <Compile Include="Assets\Scripts\Managers\DDOL.cs" />
+    <Compile Include="Assets\Scripts\Managers\GameStateManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\SessionManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\SoundManagement\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\SoundManagement\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\Metadata\ContadorAlimentos.cs" />
+    <Compile Include="Assets\Scripts\Metadata\GameMetaData.cs" />
+    <Compile Include="Assets\Scripts\Metadata\LevelMetaData.cs" />
+    <Compile Include="Assets\Scripts\Metadata\StoryMetaData.cs" />
+    <Compile Include="Assets\Scripts\Metadata\Vidaslonchera.cs" />
     <Compile Include="Assets\Scripts\Registro.cs" />
     <Compile Include="Assets\Scripts\saveData.cs" />
-    <Compile Include="Assets\Scripts\SessionManager.cs" />
+    <Compile Include="Assets\Scripts\SettingsPanelController.cs" />
     <Compile Include="Assets\Scripts\TocarObjeto.cs" />
-    <Compile Include="Assets\Scripts\UnitySingleton.cs" />
-    <Compile Include="Assets\Scripts\Vidaslonchera.cs" />
-    <Compile Include="Assets\SoundManager\Demo\SoundManagerDemo.cs" />
-    <Compile Include="Assets\SoundManager\SoundManager.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\SoundManager\Readme.txt" />
+    <Compile Include="Assets\Scripts\Video\Audiolonchera.cs" />
+    <Compile Include="Assets\Scripts\Video\CargaInicio.cs" />
+    <Compile Include="Assets\Scripts\Video\Controladorvideo.cs" />
+    <Compile Include="Assets\Scripts\Video\IntroController.cs" />
+    <Compile Include="Assets\Scripts\Video\StoryController.cs" />
+    <Compile Include="Assets\Scripts\Video\VideoController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

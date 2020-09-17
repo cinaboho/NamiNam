@@ -28,8 +28,21 @@ public class CargaConsejo : MonoBehaviour {
     public void IrNiveles()
     {
         audioClic.Play();
-        // SceneManager.LoadScene("Niveles");
-        SceneManager.LoadScene("Juego");
+        if (bandera.niv1 == true)
+        {
+            bandera.niv1 = false;
+            SceneManager.LoadScene("Juego");
+        }
+        else if (bandera.niv2)
+        {
+            bandera.niv2 = false;
+            SceneManager.LoadScene("Juego2");
+        }
+        else if (bandera.niv3)
+        {
+            bandera.niv3 = false;
+            SceneManager.LoadScene("Juego3");
+        }
     }
 
     IEnumerator cargarEscena()
@@ -90,8 +103,20 @@ public class CargaConsejo : MonoBehaviour {
         yield return new WaitForSecondsRealtime(audioArmar.clip.length);
         yield return new WaitForSecondsRealtime(1f);*/
         // SceneManager.LoadScene("Niveles");
-        SceneManager.LoadScene("Juego");
-
-
+        if (bandera.niv1 == true)
+        {
+            bandera.niv1 = false;
+            SceneManager.LoadScene("Juego");
+        }
+        else if (bandera.niv2)
+        {
+            bandera.niv2 = false;
+            SceneManager.LoadScene("Juego2");
+        }
+        else if (bandera.niv3)
+        {
+            bandera.niv3 = false;
+            SceneManager.LoadScene("Juego3");
+        }
     }
 }

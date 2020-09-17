@@ -24,14 +24,13 @@ public class Colector : MonoBehaviour {
             Destroy(target.gameObject);
         }*/
         //print(gameObject);
-        
 
         if (target.gameObject.tag != "chatarra")
         {
             temp++;
+            
             if (temp == 2)
             {
-            
                 vidas = FindObjectOfType<ControladorVidas>();
                 vidas.RestarVidas();
                 temp = 0;

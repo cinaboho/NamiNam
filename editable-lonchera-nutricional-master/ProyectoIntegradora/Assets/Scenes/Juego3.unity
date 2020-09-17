@@ -141,6 +141,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puntaje: 0
+  score: 0
+  errors: 0
 --- !u!4 &20103011
 Transform:
   m_ObjectHideFlags: 0
@@ -630,6 +632,7 @@ MonoBehaviour:
   vLon: {fileID: 0}
   juego: {fileID: 0}
   lonchera: {fileID: 0}
+  cPuntaje: {fileID: 0}
 --- !u!4 &559803866
 Transform:
   m_ObjectHideFlags: 0
@@ -1977,6 +1980,23 @@ MonoBehaviour:
   audio: {fileID: 0}
   registro: {fileID: 0}
   bandera: {fileID: 0}
+  levelData:
+    tipo: 
+    id_registro: 
+    nombre_juego: 
+    descripcion_juego: 
+    nombre_capitulo: 
+    descripcion_capitulo: 
+    nombre_historia: 
+    fecha_inicio: 
+    fecha_fin: 
+    tiempo_juego: 
+    estado: 
+    nombre_nivel: 
+    descripcion_nivel: 
+    correctas: 
+    incorrectas: 
+    puntaje: 
 --- !u!4 &1423010797
 Transform:
   m_ObjectHideFlags: 0
@@ -2187,7 +2207,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1650846245
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 523015908f3ecda43b01ea6033b0d1fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
