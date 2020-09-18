@@ -651,12 +651,14 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Build: 1
+    Collab: 1
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 2013f06c-0406-4807-944f-f6b66029500f
-  projectName: animales (2)
-  organizationId: unity_kjl7jywqhwfzfq
+  cloudProjectId: 7146e2c6-a9c4-485c-8a51-465fd2af8407
+  projectName: Animales
+  organizationId: ltoroyerovi
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
