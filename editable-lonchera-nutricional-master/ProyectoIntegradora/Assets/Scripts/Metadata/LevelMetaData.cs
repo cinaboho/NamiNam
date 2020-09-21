@@ -10,14 +10,14 @@ public class LevelMetaData : GameMetaData
     public string correctas;            //básicamente cuantos subniveles hay
     public string incorrectas;          //
     public string puntaje;
-    
+
 
 
 	public LevelMetaData(string id_registro, string nombre_nivel) : base(id_registro)
     {
         tipo = "juego";
         this.nombre_nivel = nombre_nivel;
-        descripcion_nivel = "Consigue tantos puntos como puedas";
+        descripcion_nivel = "Captura alimentos saludable";
         correctas = "0";
         incorrectas = "0";
         puntaje = "0";

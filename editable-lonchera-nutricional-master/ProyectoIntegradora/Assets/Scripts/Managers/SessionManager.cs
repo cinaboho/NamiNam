@@ -12,7 +12,7 @@ public class SessionManager : UnitySingleton<SessionManager> {
     public string tipo = "jugador";
     public string avatar;
     public string nombre_jugador;
-    public string nombre_juego = "Nami Nam";
+    public string nombre_juego = "Nami_Nam";
     private string V;
 
 

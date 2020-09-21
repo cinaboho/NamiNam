@@ -94,7 +94,7 @@ public class ControladorJuego : MonoBehaviour {
         alimentos = FindObjectOfType<ContadorAlimentos>();
         contP = FindObjectOfType<ContadorPuntaje>();
         activityName = GameStateManager.Instance.getCurrentSceneName();
-        levelData = new LevelMetaData(SessionManager.Instance.nombre_jugador, "Seres" + activityName);
+        levelData = new LevelMetaData(SessionManager.Instance.nombre_jugador, "Lonchera Básica " + activityName);
         if (SceneManager.GetSceneByName("Juego").isLoaded)
         {
             bandera.tempNombre = "Juego";

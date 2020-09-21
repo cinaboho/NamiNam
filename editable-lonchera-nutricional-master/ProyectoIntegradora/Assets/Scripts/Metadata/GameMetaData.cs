@@ -26,10 +26,10 @@ public abstract class GameMetaData {
         this.id_registro = id_registro;
 
         nombre_juego = SessionManager.Instance.nombre_juego;
-        descripcion_juego = "Nami Nam";
-        nombre_capitulo = "Primera parte";
+        descripcion_juego = "Alimentos Saludables en Lonchera";
+        nombre_capitulo = "Alimentos Identificación";
         descripcion_capitulo = "En Nami Nam, los ninos aprenderan sobre alimentos saludables y sobre una lonchera balanceada";
-        nombre_historia = "Historia-Nami Nam";
+        nombre_historia = "Juego-Nami Nam";
 
         fecha_inicio = System.DateTime.Now.ToString("yyyy/MM/dd");
 

@@ -142,7 +142,7 @@ public class GameStateManager : UnitySingleton<GameStateManager>
             return true;
         }
         Debug.Log("Error. Check internet connection!");
-        return false;   
+        return false;
     }
 
     IEnumerator CheckServer()
