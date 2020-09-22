@@ -12,7 +12,7 @@ public class SessionManager : UnitySingleton<SessionManager> {
     public string tipo = "jugador";
     public string avatar;
     public string nombre_jugador;
-    public string nombre_juego = "Nami_Nam";
+    public string nombre_juego;
     private string V;
 
 
@@ -32,7 +32,7 @@ public class SessionManager : UnitySingleton<SessionManager> {
 
         this.avatar = avatar;
         this.nombre_jugador = school + V + room + V + nombre_jugador;
-
+        this.nombre_juego = "Nami_Nam 1";
         GameStateManager.Instance.AddJsonToList(JsonUtility.ToJson(this));
     }
 	

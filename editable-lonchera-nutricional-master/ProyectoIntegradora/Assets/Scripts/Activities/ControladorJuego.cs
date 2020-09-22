@@ -12,7 +12,6 @@ public class ControladorJuego : MonoBehaviour {
     public Registro registro;
     public ControladorBandera bandera;
     public LevelMetaData levelData;
-    private string activityName;
     public void IrMenu(string nombre)
     {
         // SceneManager.LoadScene(nombre);
@@ -93,22 +92,23 @@ public class ControladorJuego : MonoBehaviour {
         registro = FindObjectOfType<Registro>();
         alimentos = FindObjectOfType<ContadorAlimentos>();
         contP = FindObjectOfType<ContadorPuntaje>();
-        activityName = GameStateManager.Instance.getCurrentSceneName();
-        levelData = new LevelMetaData(SessionManager.Instance.nombre_jugador, "Lonchera Básica " + activityName);
         if (SceneManager.GetSceneByName("Juego").isLoaded)
         {
             bandera.tempNombre = "Juego";
             //EndLevel("completado");
+            levelData = new LevelMetaData(SessionManager.Instance.nombre_jugador, "Lonchera Básica Activity 1", "Captura alimentos saludable - Lento");
         }
         else if (SceneManager.GetSceneByName("Juego2").isLoaded)
         {
             bandera.tempNombre = "Juego2";
             //EndLevel("completado");
+            levelData = new LevelMetaData(SessionManager.Instance.nombre_jugador, "Lonchera Básica Activity 2","Captura alimentos saludable - Medio");
         }
         else if (SceneManager.GetSceneByName("Juego3").isLoaded)
         {
             bandera.tempNombre = "Juego3";
             //EndLevel("completado");
+            levelData = new LevelMetaData(SessionManager.Instance.nombre_jugador, "Lonchera Básica Activity 3", "Captura alimentos saludable - Rapido");
         }
         //  savedata.SaveData();
         //  if (contP.bandera == false)
